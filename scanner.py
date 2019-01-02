@@ -57,11 +57,11 @@ def scanner(target_host,target_port):
 
         
 def main():
-   usage = 'Usage:%prog -h <host> -p <port>'
+   usage = 'Usage:%prog --host <host> --port <port>'
    parser = optparse.OptionParser(usage,version='%prog v1.0')
-   parser.add_option('--host',dest='target_host',type='string',
+   parser.add_option('-i','--ip',dest='target_host',type='string',
                      help='需要扫描的主机,域名或IP')
-   parser.add_option('--port',dest='target_port',type='string',
+   parser.add_option('-p','--port',dest='target_port',type='string',
                     help='需要扫描的主机端口，支持1-100或21,53,80两种形式')
    (options,args) = parser.parse_args()
    if options.target_host == None or options.target_port == None:
