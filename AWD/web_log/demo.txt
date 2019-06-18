@@ -1,0 +1,10 @@
+1 <?php require_once("control_me.php")?>
+<?php
+1 <?php require_once("control_me.php")?>
+<?php
+1 <?php require_once("control_me.php")?>
+require_once('control_me.php');
+1 <?php require_once("control_me.php")?>
+?>require_once('control_me.php');
+1 <?php require_once("control_me.php")?>
+?>
