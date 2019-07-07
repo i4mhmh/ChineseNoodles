@@ -63,7 +63,6 @@ def request_me(url):
     Get_page = re.findall(req,html)
     print('目的ip所在地址为: ' + Get_page[1])
     #爬虫抓取到目的ip所在地址
-
     #可以实现抓取自己ip所在地 同理
     r = requests.get('https://ip.cn/',headers=header)
     html = r.text
